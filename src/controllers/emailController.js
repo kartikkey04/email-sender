@@ -10,7 +10,7 @@ const sendEmail = async (req, res) => {
     }
 
     const mailOptions = {
-      from: process.env.EMAIL_FROM,
+      from: 'kartikeyshrivastav6658@gmail.com',
       to: email,
       subject: "Welcome to the Email Notification System",
       html: `
