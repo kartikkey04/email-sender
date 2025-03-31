@@ -1,5 +1,6 @@
 const transporter = require("../config/emailConfig");
 const path = require("path");
+require('dotenv').config();
 
 const sendEmail = async (req, res) => {
   try {
@@ -10,7 +11,7 @@ const sendEmail = async (req, res) => {
     }
 
     const mailOptions = {
-      from: 'kartikeyshrivastav6658@gmail.com',
+      from: process.env.SENDER_MAIL,
       to: email,
       subject: "Welcome to the Email Notification System",
       html: `

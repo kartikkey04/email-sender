@@ -1,7 +1,5 @@
 const express = require("express");
-const dotenv = require("dotenv").config();
 const emailRoutes = require("./routes/emailRoutes");
-
 
 const app = express();
 
